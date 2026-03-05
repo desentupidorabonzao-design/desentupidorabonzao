@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desentupidora e Dedetizadora Bonzão - Florianópolis 24h</title>
+    <meta name="description" content="Serviços de desentupimento e dedetização em Florianópolis e região. Atendimento 24 horas para ralos, pias, vasos e muito mais.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: 'hsl(0, 80%, 45%)',
+                            foreground: 'hsl(0, 0%, 100%)',
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(45, 100%, 50%)',
+                            foreground: 'hsl(0, 0%, 10%)',
+                        },
+                        background: 'hsl(0, 0%, 100%)',
+                        foreground: 'hsl(0, 0%, 15%)',
+                        muted: {
+                            DEFAULT: 'hsl(40, 20%, 96%)',
+                            foreground: 'hsl(0, 0%, 40%)',
+                        },
+                        card: {
+                            DEFAULT: 'hsl(0, 0%, 100%)',
+                            foreground: 'hsl(0, 0%, 15%)',
+                        },
+                        border: 'hsl(0, 0%, 88%)',
+                    },
+                    keyframes: {
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 10px hsla(120, 60%, 40%, 0.4)' },
+                            '50%': { boxShadow: '0 0 25px hsla(120, 60%, 40%, 0.7)' },
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background text-foreground;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            }
+            .hero-gradient {
+                background: linear-gradient(135deg, hsl(0, 80%, 40%) 0%, hsl(0, 70%, 30%) 100%);
+            }
+            .cta-gradient {
+                background: linear-gradient(135deg, hsl(120, 60%, 40%) 0%, hsl(120, 70%, 35%) 100%);
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Desentupidora e Dedetizadora Bonzão",
+        "telephone": "+5548984950386",
+        "url": "https://desentupidorbonzao.com.br",
+        "description": "Serviços de desentupimento e dedetização em Florianópolis e região.",
+        "areaServed": "Florianópolis, SC"
+    }
+    </script>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-primary py-3 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <img src="assets/logo_bonzao.png" alt="Logo Desentupidora e Dedetizadora Bonzão" class="h-14 w-14 rounded-full object-cover">
+            <div class="flex items-center gap-3">
+                <a href="tel:+5548984950386" class="flex items-center gap-2 rounded-lg bg-white px-4 py-2 font-heading text-sm font-bold text-primary transition hover:opacity-90">
+                    <i data-lucide="phone" class="h-4 w-4"></i>
+                    <span class="hidden sm:inline">48 98495-0386</span>
+                    <span class="sm:hidden">Ligar</span>
+                </a>
+                <a href="https://wa.me/5548984950386?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-lg bg-[#2e992e] px-4 py-2 font-heading text-sm font-bold text-white transition hover:opacity-90 animate-pulse-glow">
+                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden hero-gradient py-16 md:py-24">
+        <div class="container mx-auto flex flex-col items-center gap-8 px-4 md:flex-row">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="font-heading text-4xl font-black leading-tight text-white text-shadow md:text-5xl lg:text-6xl">
+                    Desentupidora e Dedetizadora <span class="text-secondary">Bonzão</span>
+                </h1>
+                <p class="mt-4 text-lg text-white/90 md:text-xl">
+                    Atendimento 24 horas em Florianópolis e região. Desentupimento de ralos, pias, vasos, tanques, mictórios, prumadas e tubulações pluviais. Limpeza de caixa de gordura. Dedetização profissional.
+                </p>
+                <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
+                    <a href="https://wa.me/5548984950386?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 rounded-xl px-8 py-4 font-heading text-lg font-bold text-white transition hover:scale-105 cta-gradient">
+                        <i data-lucide="message-circle" class="h-6 w-6"></i>
+                        Solicitar Orçamento
+                    </a>
+                    <a href="tel:+5548984950386" class="inline-flex items-center justify-center gap-3 rounded-xl border-2 border-white/30 px-8 py-4 font-heading text-lg font-bold text-white transition hover:bg-white/10">
+                        <i data-lucide="phone" class="h-6 w-6"></i>
+                        48 98495-0386
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="assets/logo_bonzao.png" alt="Mascote Desentupidora Bonzão" class="mx-auto w-64 drop-shadow-2xl md:w-80">
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="bg-muted py-8">
+        <div class="container mx-auto grid grid-cols-1 gap-4 px-4 sm:grid-cols-3">
+            <div class="flex items-center gap-3 rounded-lg bg-white p-4 shadow-sm">
+                <i data-lucide="clock" class="h-8 w-8 text-primary"></i>
+                <span class="font-heading text-sm font-bold text-foreground">Atendimento 24 Horas</span>
+            </div>
+            <div class="flex items-center gap-3 rounded-lg bg-white p-4 shadow-sm">
+                <i data-lucide="map-pin" class="h-8 w-8 text-primary"></i>
+                <span class="font-heading text-sm font-bold text-foreground">Florianópolis e Região</span>
+            </div>
+            <div class="flex items-center gap-3 rounded-lg bg-white p-4 shadow-sm">
+                <i data-lucide="shield-check" class="h-8 w-8 text-primary"></i>
+                <span class="font-heading text-sm font-bold text-foreground">Profissionais Qualificados</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="py-12">
+        <div class="container mx-auto grid grid-cols-1 gap-6 px-4 md:grid-cols-2">
+            <img src="assets/van_bonzao.png" alt="Van da Desentupidora Bonzão" class="w-full rounded-xl object-cover shadow-lg">
+            <img src="assets/caminhao_bonzao.png" alt="Caminhão limpa-fossa" class="w-full rounded-xl object-cover shadow-lg">
+        </div>
+    </section>
+
+    <!-- Serviços Desentupimento -->
+    <section class="py-12 bg-muted" id="servicos">
+        <div class="container mx-auto px-4">
+            <h2 class="mb-8 text-center font-heading text-3xl font-black text-foreground md:text-4xl">
+                Serviços de <span class="text-primary">Desentupimento</span>
+            </h2>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4" id="services-grid">
+                <!-- Injected via Script -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Dedetização -->
+    <section class="py-12" id="dedetizacao">
+        <div class="container mx-auto px-4">
+            <h2 class="mb-8 text-center font-heading text-3xl font-black text-foreground md:text-4xl">
+                Serviços de <span class="text-primary">Dedetização</span>
+            </h2>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="dedet-grid">
+                <!-- Injected via Script -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-16 hero-gradient">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl font-black text-white md:text-4xl">
+                Precisa de um Desentupidor ou Dedetizador?
+            </h2>
+            <p class="mx-auto mt-4 max-w-2xl text-lg text-white/90">
+                A Desentupidora e Dedetizadora Bonzão atende Florianópolis, São José, Palhoça, Biguaçu e toda a Grande Florianópolis. Orçamento sem compromisso!
+            </p>
+            <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <a href="https://wa.me/5548984950386?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 rounded-xl px-10 py-5 font-heading text-xl font-bold text-white transition hover:scale-105 animate-pulse-glow cta-gradient">
+                    <i data-lucide="message-circle" class="h-7 w-7"></i>
+                    Chamar no WhatsApp
+                </a>
+                <a href="tel:+5548984950386" class="inline-flex items-center gap-3 rounded-xl border-2 border-white/40 px-10 py-5 font-heading text-xl font-bold text-white transition hover:bg-white/10">
+                    <i data-lucide="phone" class="h-7 w-7"></i>
+                    Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground py-8 text-white/80">
+        <div class="container mx-auto px-4 text-center">
+            <img src="assets/logo_bonzao.png" alt="Logo Bonzão" class="mx-auto mb-4 h-16 w-16 rounded-full">
+            <p class="font-heading text-lg font-bold text-white">Desentupidora e Dedetizadora Bonzão</p>
+            <p class="mt-1 text-sm">Florianópolis e Região — Atendimento 24h</p>
+            <p class="mt-1 font-heading text-lg font-bold text-secondary">48 98495-0386</p>
+            <p class="mt-4 text-xs text-white/50">
+                &copy; <span id="year"></span> Desentupidora Bonzão. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="tel:+5548984950386" class="fixed bottom-6 left-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-2xl transition hover:scale-110" aria-label="Ligar">
+        <i data-lucide="phone" class="h-8 w-8 text-white"></i>
+    </a>
+
+    <a href="https://wa.me/5548984950386?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full shadow-2xl transition hover:scale-110 animate-pulse-glow cta-gradient" aria-label="WhatsApp">
+        <i data-lucide="message-circle" class="h-8 w-8 text-white"></i>
+    </a>
+
+    <script>
+        // Data
+        const services = [
+            { icon: "droplets", title: "Desentupimento de Ralos", desc: "Desobstrução completa de ralos de banheiro, cozinha e área de serviço com equipamentos profissionais." },
+            { icon: "wrench", title: "Desentupimento de Pias", desc: "Serviço especializado para desentupir pias de cozinha e banheiro, eliminando gordura e resíduos acumulados." },
+            { icon: "droplets", title: "Desentupimento de Vasos Sanitários", desc: "Desobstrução de vasos e bacias sanitárias com técnicas modernas e sem quebrar pisos." },
+            { icon: "wrench", title: "Desentupimento de Tanques", desc: "Limpeza e desobstrução de tanques de lavar roupa e tanques industriais." },
+            { icon: "droplets", title: "Desentupimento de Mictórios", desc: "Manutenção e desentupimento de mictórios em banheiros comerciais e industriais." },
+            { icon: "wrench", title: "Desentupimento de Coluna (Prumada)", desc: "Desobstrução de colunas e tubulações verticais em prédios e edifícios residenciais." },
+            { icon: "droplets", title: "Desentupimento Pluvial", desc: "Limpeza e desobstrução de tubulações pluviais, calhas e sistemas de drenagem de águas de chuva." },
+            { icon: "shield-check", title: "Limpeza de Caixa de Gordura", desc: "Higienização e limpeza completa de caixas de gordura residenciais e comerciais, prevenindo entupimentos." }
+        ];
+
+        const dedetServices = [
+            { icon: "bug", title: "Dedetização de Pombos", desc: "Controle e afugentamento de pombos com métodos seguros e eficazes para sua residência ou empresa." },
+            { icon: "bug", title: "Dedetização de Morcegos", desc: "Remoção e controle de morcegos em telhados, forros e áreas externas com segurança." },
+            { icon: "bug", title: "Dedetização de Ratos", desc: "Desratização profissional com iscas e armadilhas seguras para eliminar roedores." },
+            { icon: "bug", title: "Dedetização de Baratas", desc: "Aplicação de gel e inseticidas profissionais para eliminação total de baratas." },
+            { icon: "shield-check", title: "Controle de Animais Peçonhentos", desc: "Identificação e controle de escorpiões, aranhas e outros animais peçonhentos com profissionais treinados." }
+        ];
+
+        // Render Services
+        const servicesGrid = document.getElementById('services-grid');
+        services.forEach(s => {
+            const article = document.createElement('article');
+            article.className = 'rounded-xl bg-white p-6 shadow-md transition hover:shadow-xl hover:-translate-y-1';
+            article.innerHTML = `
+                <i data-lucide="${s.icon}" class="mb-3 h-10 w-10 text-primary"></i>
+                <h3 class="font-heading text-lg font-bold text-foreground">${s.title}</h3>
+                <p class="mt-2 text-sm text-muted-foreground">${s.desc}</p>
+            `;
+            servicesGrid.appendChild(article);
+        });
+
+        // Render Dedet
+        const dedetGrid = document.getElementById('dedet-grid');
+        dedetServices.forEach(s => {
+            const article = document.createElement('article');
+            article.className = 'rounded-xl border border-border bg-white p-6 shadow-md transition hover:shadow-xl hover:-translate-y-1';
+            article.innerHTML = `
+                <i data-lucide="${s.icon}" class="mb-3 h-10 w-10 text-primary"></i>
+                <h3 class="font-heading text-lg font-bold text-foreground">${s.title}</h3>
+                <p class="mt-2 text-sm text-muted-foreground">${s.desc}</p>
+            `;
+            dedetGrid.appendChild(article);
+        });
+
+        // Initialize Lucide
+        lucide.createIcons();
+
+        // Set Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
