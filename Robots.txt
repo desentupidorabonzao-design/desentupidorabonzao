@@ -1,4 +1,4 @@
-# Mecanismos de busca (Search Engines)
+# Mecanismos de busca (Search Engines) 
 User-agent: Googlebot
 Allow: /
 
@@ -217,4 +217,5 @@ User-agent: UC Browser
 Allow: /
 
 # Adicionei o comando para o Sitemap
+
 Sitemap: https://desentupidorabonzao.com.br/sitemap.xml
