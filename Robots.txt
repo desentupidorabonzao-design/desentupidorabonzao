@@ -125,9 +125,6 @@ Allow: /
 User-agent: Screaming Frog SEO Spider
 Allow: /
 
-# Scrapers e bots de conteÃºdo (Scrapers & Content Bots)
-User-agent: BlexBot
-Allow: /
 
 User-agent: DotBot
 Allow: /
@@ -219,3 +216,4 @@ Allow: /
 # Adicionei o comando para o Sitemap
 
 Sitemap: https://desentupidorabonzao.com.br/sitemap.xml
+
